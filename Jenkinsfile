@@ -12,7 +12,7 @@ pipeline {
     }
     stage('Mail Notification ') {
       steps {
-        mail(subject: 'Jenkins', body: 'soit echec ou réussite de l\'intégration ', from: 'ft_medjkoune@esi.dz', to: 'ft_medjkoune@esi.dz')
+        mail(subject: 'Jenkins', body: 'soit echec ou rÃ©ussite de l\'intÃ©gration ', from: 'ft_medjkoune@esi.dz', to: 'ft_medjkoune@esi.dz')
       }
     }
     stage('Code Analysis') {
@@ -40,7 +40,7 @@ pipeline {
     }
     stage('Slack Notification') {
       steps {
-        slackSend(message: 'deploiment avec succ�e ', attachments: 'deploiment avec succ�e ')
+        slackSend(message: 'deploiment avec succée ', attachments: 'deploiment avec succée ')
       }
     }
   }
